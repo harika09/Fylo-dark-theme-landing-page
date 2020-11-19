@@ -104,7 +104,7 @@ header{
 }
 
 .intro__text h2{
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
@@ -223,7 +223,7 @@ header{
 
 .productive__container .productive__text p{
     width: 80%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -245,10 +245,11 @@ header{
     align-items: center;
     justify-content: center;
     color: var(--White);
-    min-height: 100vh;
+    min-height: 50vh;
     max-width: 100vw;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 80px;
     font-family: var(--open-sans);
     background: url(/assets/img/bg-quotes.png) no-repeat ;
     background-position: 40px 280px;
@@ -298,7 +299,7 @@ header{
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: 50vh;
     max-width: 100vw;
     background-color: var(--Dark-Blue-footer-background);
     color: var(--White);
@@ -318,7 +319,7 @@ header{
     margin-right: auto; 
     margin-top: -100px;
     width: 50%;
-    padding: 50px 50px;
+    padding: 20px 20px;
     background-color: #0C1625;
     color: #fff;
     text-align: center;
@@ -328,7 +329,7 @@ header{
 }
 
 .early__container .early h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .early__container .early .subcribe{
@@ -343,7 +344,7 @@ header{
 .early__container .early p{
     margin-left: auto;
     margin-left: auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 10px;
 }
 
@@ -431,13 +432,13 @@ header{
 /* ========== Footer Container END ========== */
 
 
-@media screen and (max-width: 1025px){
+@media screen and (min-width: 900px) and (max-width: 1025px){
     .testimonials__container p{
         font-size: 1rem;
     }
 
     .early__container .early h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .early__container .logo img{
@@ -542,30 +543,25 @@ header{
         grid-template-columns: 1fr;
         padding: 0 30px;
         margin-top: 80px;
-        min-height: 100vh;
+        min-height: 80vh;
     }
 
-    .early__container .early{
-        left: 80px; 
-        right: 80px; 
-        width: 100%;
-    }
 
     .early__container .logo{
         position: relative;
         left: 30px;
-        top: 290px;
+        top: 280px;
         width: 50%;
        
     }
 
     .early__container .early{
-        margin-top: 50px;
-        width: 80%;
         display: block;
         left: 0;
         right: 0;
-        padding: 40px 40px;
+        margin-top: -20px;
+        width: 70%;
+        padding: 20px 15px;
     }
 
     .early__container .early h2{
@@ -578,6 +574,12 @@ header{
         width: 100%;
     }
 
+    .early__container .early span{
+        font-size: .8rem;
+        position: relative;
+        bottom: 60px;
+        left: 5px;
+    }
 
     .early__container .early .subcribe{
         width: 100%;
@@ -592,25 +594,27 @@ header{
 
     .footer__container .connect, .about, .contact, .social, .location{
         width: 100%;
-        font-size: 1rem;
+        font-size: .8rem;
     }
     .footer__container .location{
         position: relative;
-        top: 250px;
+        top: 180px;
         right: 20px;
+        width: 70%;
     }
 
 
     .footer__container .connect{
         position: relative;
         margin-bottom: 10px;
-        top: 170px
+        top: 110px
       
     }
 
-    .footer__container .about{
+    .footer__container .about ul li{
         position: relative;
         top: 60px;
+        margin-bottom: 5px;
     }
 
 }
@@ -696,14 +700,7 @@ header{
     }
 
     /* Footer */
-    .early__container .early{
-        display: block;
-        left: 0;
-        right: 0;
-        margin-top: 40px;
-        width: 70%;
-        padding: 20px 15px;
-    }
+  
 
     .early__container .early span{
         font-size: .5rem;
@@ -723,7 +720,7 @@ header{
     .early__container .logo{
         position: relative;
         left: 30px;
-        top: 220px;
+        top: 230px;
         
     }
 
@@ -735,22 +732,25 @@ header{
 
     .footer__container .location{
         position: relative;
-        top: 200px;
+        top: 120px;
+        width: 100%;
     }
 
     .footer__container .location p{
-        width: 100%;
         font-size: .6rem;
     }
 
     .footer__container .about ul li{
         margin-bottom: 5px;
-        top: 30px;
+        bottom: 20px;
     }
 
     .footer__container .connect ul li{
         margin-bottom: 5px;
-        top: -10px;
+    }
+
+    .footer__container .connect{
+        top: 80px;
     }
     
    .footer__container .contact ul li{
